@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+.main {
+    width: 100%;
+}
+
+body {
+    background-color: #949494;
+}
+
+.text {
+    background-color: white;
+    color: black;
+    margin: 20px 0px;
+    border-radius: 20px;
+    line-height: 2em;
+    padding: 20px;
+}
+
+.slider {
+    border-radius: 20px;
+}
+
+.pboxshadow {
+    box-shadow: -10px 10px 10px rgb(58, 58, 58);
+}
+
+.boxshadow:hover {
+    box-shadow: -10px 10px 10px rgb(58, 58, 58);
+}
+
+.round {
+    width: 100%;
+    border-radius: 100%;
+    margin-left: 10%;
+}
+
+.imgtext {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.imgabout {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.abouttext {
+    width: 45%;
+    margin-left: 5%;
+}

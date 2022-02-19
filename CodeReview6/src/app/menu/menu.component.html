@@ -1,0 +1,24 @@
+<h1 class="text-center my-2">Our Dishes Today</h1>
+<div class="row row-cols-xl-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 cards">
+    <div *ngFor="let dish of dishes ; index as dishId">
+        <div class="col">
+            <div class="card my-4 boxshadow" style="width: 80%;">
+                <img src="{{dish.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="cart-title"> {{dish.name}}</h5>
+                    <p class="cart-title"> {{dish.description}}</p>
+                    <hr>
+                    <p class="card-text">{{dish.price}}&euro;</p>
+                    <hr>
+
+                    <div *ngIf="dish.available; else elseBlock"><button class="btn btn-primary "><a routerLink="dishes/{{dishId}}" class="details">Details</a></button>
+                        <button class="btn btn-success mx-3" (click)="addToCart()">Order</button></div>
+                    <ng-template #elseBlock>
+                        <p class="text-danger">This dish is not available.</p>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
